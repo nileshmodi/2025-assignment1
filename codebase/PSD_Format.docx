@@ -1,0 +1,93 @@
+Here’s a set of **standard Word formatting guidelines** you can apply to your `prd.docx` (PSD) to ensure consistency and readability:
+
+---
+
+## 1. Document-Wide Settings
+
+* **Page Size & Margins**
+
+  * A4 (210 × 297 mm)
+  * Margins: 1″ (2.54 cm) on all sides
+* **Line Spacing**
+
+  * Body text: 1.15
+  * Before/After paragraph spacing: 6 pt before, 6 pt after
+* **Alignment**
+
+  * Body text: Justified
+  * Headings: Left‑aligned
+
+---
+
+## 2. Font Family & Sizes
+
+| Element             | Font Family      | Font Size | Style       |
+| ------------------- | ---------------- | --------- | ----------- |
+| Body Text           | Calibri or Arial | 11 pt     | Regular     |
+| Section Headings H1 | Calibri or Arial | 18 pt     | Bold        |
+| Sub‑Headings H2     | Calibri or Arial | 14 pt     | Bold        |
+| Sub‑Sub H3          | Calibri or Arial | 12 pt     | Bold Italic |
+| Captions & Notes    | Calibri or Arial | 10 pt     | Italic      |
+| Table Text          | Calibri or Arial | 10 pt     | Regular     |
+
+---
+
+## 3. Heading Styles
+
+* **H1 (e.g., “1. Introduction”)**
+
+  * 18 pt, Bold, All Caps or Title Case
+  * 24 pt spacing after
+* **H2 (e.g., “2. Product Overview”)**
+
+  * 14 pt, Bold, Title Case
+  * 18 pt spacing after
+* **H3 (e.g., “2.1 In‑Scope”)**
+
+  * 12 pt, Bold Italic, Sentence case
+  * 12 pt spacing after
+
+> ⚙️ *Use Word’s built‑in Heading 1/2/3 styles so you can auto‑generate the Table of Contents.*
+
+---
+
+## 4. Text Emphasis
+
+* **Bold** for key terms, requirement IDs (e.g., **FR‑1**), section titles
+* *Italic* for examples, notes, captions
+* `Monospaced` (Courier New or Consolas, 10 pt) for code snippets or inline file references
+
+---
+
+## 5. Lists & Numbering
+
+* **Bullet lists:** round bullets, 0.25″ indent
+* **Numbered lists:** Arabic numerals (1., 1.1, 1.1.1), 0.25″ indent per level
+* **Requirement tables:** use a simple 1 pt grid, banded rows (light gray on alternate rows)
+
+---
+
+## 6. Tables & Figures
+
+* **Table captions:** 10 pt Italic, above table
+* **Figure captions:** 10 pt Italic, below figure
+* **Table header row:** Bold, center‑aligned, 11 pt, light shading (15% gray)
+
+---
+
+## 7. Footer & Header
+
+* **Header:** Document title (left) + version/date (right), 10 pt
+* **Footer:** Page number centered, 10 pt
+
+---
+
+## 8. Colors & Highlights
+
+* Keep body text in black.
+* Use one accent color (e.g., dark blue) sparingly for call‑outs or status indicators.
+* Avoid excessive highlighting—reserve for very important notes only.
+
+---
+
+Applying these specs will give your PSD a clean, professional look and make it easy to navigate and review.

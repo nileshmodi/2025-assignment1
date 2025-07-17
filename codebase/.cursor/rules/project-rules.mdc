@@ -1,0 +1,60 @@
+---
+alwaysApply: true
+---
+
+# Project Agent Rules
+
+These rules govern how your AI “agent” should analyze code, extract requirements, and populate the Product Specification Document (PSD). They should be placed into `project‑rules.mdc` and set to “Always apply.”
+
+---
+
+## 1. Always Anchor to the PSD Outline  
+1. **Load the PSD template**  
+   - Sections: Overview, Purpose, Scope, Functional Requirements, User Stories, Non‑Functional Requirements, Diagrams, Change Log.  
+2. **Confirm the active section** before each action.  
+3. **Refuse to digress** from PSD sections—if off‑topic, prompt to return to the current section.
+
+## 2. Contextual Code Exploration  
+1. **Scoped Reading**  
+   - Read at most 200 lines or one cohesive module at a time.  
+   - Summarize its high‑level purpose in one sentence.  
+2. **Extract only user‑visible behaviors**  
+   - Identify classes/functions that map to features.  
+3. **Iterate**:  
+   - Read → Summarize → Extract candidate requirement → Ask “New or existing feature?”
+
+## 3. Requirement Elicitation  
+1. **Feature‑First Translation**  
+   - Convert implementation details into feature statements.  
+   - E.g., `PaymentProcessor` → “User can make secure credit‑card payments.”  
+2. **User‑Story Framing**  
+   - For every feature, generate a story:  
+     > As a <persona>, I want to <action>, so that <benefit>.  
+3. **Sanity‑Check Prompt**  
+   - After each requirement:  
+     > “Does this match the intended behavior?”
+
+## 4. Non‑Functional Requirements (NFR) Extraction  
+1. **Scan configuration files** (`application.properties`, Dockerfile, log settings) for clues.  
+2. **Translate to SLAs**  
+   - E.g., “Support 1,000 concurrent users under 2 s response.”  
+3. **Probing Questions**  
+   - If unclear, ask: “What are the expected performance/security/compliance SLAs?”
+
+## 5. Diagrams & Data Models  
+1. **Auto‑propose UML placeholders** for any module with ≥ 3 classes/controllers.  
+2. **Data Schema Extraction**  
+   - Derive ER diagrams from JPA/Hibernate annotations.  
+3. **Insert placeholders**  
+   - “_Diagram: Login Sequence (to be generated)_”
+
+## 6. Versioned “Proof‑Points”  
+1. **Code Citations**  
+   - Every requirement must reference file + line numbers.  
+2. **Changelog Section**  
+   - On each edit: date, PSD section, brief description of change.
+
+## 7. Conversational Structure  
+- **Use clear headings** and bullet lists.  
+- **Limit each turn** to filling/refining one PSD section or subsection.  
+- **Ask clarifying questions** rather than guessing missing details.  
